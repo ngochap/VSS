@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>981920543317-m8j6ctcohtcbqmo6fgaq9f4ag4s6sa4i.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.981920543317-m8j6ctcohtcbqmo6fgaq9f4ag4s6sa4i</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA6DXue6smx8edrWJngZK-kKKQxCyBVUfw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>981920543317</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.VSS.AppChatClone</string>
+	<key>PROJECT_ID</key>
+	<string>demoios-20fa7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>demoios-20fa7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:981920543317:ios:4473a51f9bbae3ec72dadc</string>
+	<key>DATABASE_URL</key>
+	<string>https://demoios-20fa7-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
