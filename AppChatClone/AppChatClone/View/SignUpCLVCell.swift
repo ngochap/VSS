@@ -34,8 +34,15 @@ class SignUpCLVCell: UICollectionViewCell {
         txtName.addTarget(self, action: #selector(ChangeName), for: .editingChanged)
         txtPassword.addTarget(self, action: #selector(ChangePass), for: .editingChanged)
         txtConfirmPassword.addTarget(self, action: #selector(ChangeConfirmPass), for: .editingChanged)
-
+        defaultError()
     }
+    func defaultError() {
+        emailError.isHidden = true
+        nameError.isHidden = true
+        confirmPassError.isHidden = true
+        passError.isHidden = true
+    }
+    
     @objc func ChangeName() -> String? {
         let nameRegEx = "(?<! )[-a-zA-Z' ]{2,26}"
         let namePred = NSPredicate(format:"SELF MATCHES %@", nameRegEx)
