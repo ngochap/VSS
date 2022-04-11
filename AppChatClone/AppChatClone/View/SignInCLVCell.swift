@@ -40,6 +40,11 @@ class SignInCLVCell: UICollectionViewCell {
         }
     }
     @IBAction func btnSingIn(_ sender: Any) {
+       let parent = parentVC as? SignInController
+        let vc = parent?.storyboard?.instantiateViewController(withIdentifier: "tabBarController") as? tabBarController
+        print("sss")
+        parent?.navigationController?.pushViewController(vc!, animated: true)
        
+        
     }
 }

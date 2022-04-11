@@ -32,6 +32,12 @@
 		476A4F8D27FD7A1800794D7E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476A4F8C27FD7A1800794D7E /* SignUpViewController.swift */; };
 		476A4F9527FD954200794D7E /* SignInCLVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 476A4F9327FD954200794D7E /* SignInCLVCell.xib */; };
 		476A4F9627FD954200794D7E /* SignInCLVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476A4F9427FD954200794D7E /* SignInCLVCell.swift */; };
+		476C60092802857600484930 /* tabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C60082802857600484930 /* tabBarController.swift */; };
+		479CEFCD28041BC700E5D31E /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479CEFCC28041BC700E5D31E /* MessageViewController.swift */; };
+		479CEFD12804219700E5D31E /* MessCLVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 479CEFCF2804219700E5D31E /* MessCLVCell.xib */; };
+		479CEFD22804219700E5D31E /* MessCLVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479CEFD02804219700E5D31E /* MessCLVCell.swift */; };
+		479CEFD62804288F00E5D31E /* MessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 479CEFD42804288F00E5D31E /* MessTableViewCell.xib */; };
+		479CEFD72804288F00E5D31E /* MessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479CEFD52804288F00E5D31E /* MessTableViewCell.swift */; };
 		47A26E5E27FFC60E0084AAE6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47A26E5D27FFC60E0084AAE6 /* GoogleService-Info.plist */; };
 		78BA5387BB157888DB0125D6 /* Pods_AppChatClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E468EB124395BDC30C12194 /* Pods_AppChatClone.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +72,12 @@
 		476A4F8C27FD7A1800794D7E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		476A4F9327FD954200794D7E /* SignInCLVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInCLVCell.xib; sourceTree = "<group>"; };
 		476A4F9427FD954200794D7E /* SignInCLVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCLVCell.swift; sourceTree = "<group>"; };
+		476C60082802857600484930 /* tabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarController.swift; sourceTree = "<group>"; };
+		479CEFCC28041BC700E5D31E /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		479CEFCF2804219700E5D31E /* MessCLVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessCLVCell.xib; sourceTree = "<group>"; };
+		479CEFD02804219700E5D31E /* MessCLVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessCLVCell.swift; sourceTree = "<group>"; };
+		479CEFD42804288F00E5D31E /* MessTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessTableViewCell.xib; sourceTree = "<group>"; };
+		479CEFD52804288F00E5D31E /* MessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessTableViewCell.swift; sourceTree = "<group>"; };
 		47A26E5D27FFC60E0084AAE6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A50834DD00350561576C6500 /* Pods-AppChatClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChatClone.release.xcconfig"; path = "Target Support Files/Pods-AppChatClone/Pods-AppChatClone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +163,8 @@
 			children = (
 				472E85CD27FD5137003BCD44 /* SignInController.swift */,
 				476A4F8C27FD7A1800794D7E /* SignUpViewController.swift */,
+				476C60082802857600484930 /* tabBarController.swift */,
+				479CEFCC28041BC700E5D31E /* MessageViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -158,6 +172,7 @@
 		476A4F8E27FD8DFC00794D7E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				479CEFCE2804217500E5D31E /* MainCLVCell */,
 				476A4F9327FD954200794D7E /* SignInCLVCell.xib */,
 				476A4F9427FD954200794D7E /* SignInCLVCell.swift */,
 				4711EA3027FDDD3F007C7953 /* SignUpCLVCell.xib */,
@@ -166,13 +181,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		479CEFCE2804217500E5D31E /* MainCLVCell */ = {
+			isa = PBXGroup;
+			children = (
+				479CEFCF2804219700E5D31E /* MessCLVCell.xib */,
+				479CEFD02804219700E5D31E /* MessCLVCell.swift */,
+				479CEFD42804288F00E5D31E /* MessTableViewCell.xib */,
+				479CEFD52804288F00E5D31E /* MessTableViewCell.swift */,
+			);
+			path = MainCLVCell;
+			sourceTree = "<group>";
+		};
 		D5ED1732E647698A1341DF12 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				0BDBDA22D9370B381E7832BB /* Pods-AppChatClone.debug.xcconfig */,
 				A50834DD00350561576C6500 /* Pods-AppChatClone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -244,11 +269,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				479CEFD62804288F00E5D31E /* MessTableViewCell.xib in Resources */,
 				476A4F9527FD954200794D7E /* SignInCLVCell.xib in Resources */,
 				476A4F8827FD721F00794D7E /* OFL.txt in Resources */,
 				476A4F8127FD721F00794D7E /* Lato-Bold.ttf in Resources */,
 				476A4F8927FD721F00794D7E /* Lato-BlackItalic.ttf in Resources */,
 				476A4F8A27FD721F00794D7E /* Lato-BoldItalic.ttf in Resources */,
+				479CEFD12804219700E5D31E /* MessCLVCell.xib in Resources */,
 				472E85D627FD513D003BCD44 /* LaunchScreen.storyboard in Resources */,
 				476A4F8027FD721F00794D7E /* Lato-LightItalic.ttf in Resources */,
 				476A4F8327FD721F00794D7E /* Lato-Light.ttf in Resources */,
@@ -316,6 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				472E85CE27FD5137003BCD44 /* SignInController.swift in Sources */,
+				479CEFD72804288F00E5D31E /* MessTableViewCell.swift in Sources */,
+				479CEFD22804219700E5D31E /* MessCLVCell.swift in Sources */,
+				479CEFCD28041BC700E5D31E /* MessageViewController.swift in Sources */,
+				476C60092802857600484930 /* tabBarController.swift in Sources */,
 				4711EA3327FDDD40007C7953 /* SignUpCLVCell.swift in Sources */,
 				472DFF1227FE806300FF5004 /* Extension.swift in Sources */,
 				472E85CA27FD5137003BCD44 /* AppDelegate.swift in Sources */,
