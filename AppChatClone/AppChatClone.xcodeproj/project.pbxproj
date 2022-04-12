@@ -16,6 +16,11 @@
 		472E85D127FD5137003BCD44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472E85CF27FD5137003BCD44 /* Main.storyboard */; };
 		472E85D327FD513D003BCD44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472E85D227FD513D003BCD44 /* Assets.xcassets */; };
 		472E85D627FD513D003BCD44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472E85D427FD513D003BCD44 /* LaunchScreen.storyboard */; };
+		475FF8CC2805100400993B32 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475FF8CB2805100400993B32 /* GroupViewController.swift */; };
+		475FF8CE2805101300993B32 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475FF8CD2805101300993B32 /* FriendViewController.swift */; };
+		475FF8D02805102200993B32 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475FF8CF2805102200993B32 /* ProfileViewController.swift */; };
+		475FF8D32805186100993B32 /* GrouplCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 475FF8D12805186100993B32 /* GrouplCollectionViewCell.xib */; };
+		475FF8D42805186100993B32 /* GrouplCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475FF8D22805186100993B32 /* GrouplCollectionViewCell.swift */; };
 		476A4F7227FD6F5100794D7E /* MixSwift.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 476A4F7127FD6F5100794D7E /* MixSwift.ttf */; };
 		476A4F7427FD6FCE00794D7E /* fly.gif in Resources */ = {isa = PBXBuildFile; fileRef = 476A4F7327FD6FCE00794D7E /* fly.gif */; };
 		476A4F8027FD721F00794D7E /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 476A4F7527FD721E00794D7E /* Lato-LightItalic.ttf */; };
@@ -32,7 +37,7 @@
 		476A4F8D27FD7A1800794D7E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476A4F8C27FD7A1800794D7E /* SignUpViewController.swift */; };
 		476A4F9527FD954200794D7E /* SignInCLVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 476A4F9327FD954200794D7E /* SignInCLVCell.xib */; };
 		476A4F9627FD954200794D7E /* SignInCLVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476A4F9427FD954200794D7E /* SignInCLVCell.swift */; };
-		476C60092802857600484930 /* tabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C60082802857600484930 /* tabBarController.swift */; };
+		476C60092802857600484930 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C60082802857600484930 /* TabBarController.swift */; };
 		479CEFCD28041BC700E5D31E /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479CEFCC28041BC700E5D31E /* MessageViewController.swift */; };
 		479CEFD12804219700E5D31E /* MessCLVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 479CEFCF2804219700E5D31E /* MessCLVCell.xib */; };
 		479CEFD22804219700E5D31E /* MessCLVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479CEFD02804219700E5D31E /* MessCLVCell.swift */; };
@@ -56,6 +61,11 @@
 		472E85D227FD513D003BCD44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		472E85D527FD513D003BCD44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		472E85D727FD513D003BCD44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		475FF8CB2805100400993B32 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		475FF8CD2805101300993B32 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		475FF8CF2805102200993B32 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		475FF8D12805186100993B32 /* GrouplCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GrouplCollectionViewCell.xib; sourceTree = "<group>"; };
+		475FF8D22805186100993B32 /* GrouplCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrouplCollectionViewCell.swift; sourceTree = "<group>"; };
 		476A4F7127FD6F5100794D7E /* MixSwift.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MixSwift.ttf; sourceTree = "<group>"; };
 		476A4F7327FD6FCE00794D7E /* fly.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fly.gif; sourceTree = "<group>"; };
 		476A4F7527FD721E00794D7E /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -72,7 +82,7 @@
 		476A4F8C27FD7A1800794D7E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		476A4F9327FD954200794D7E /* SignInCLVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInCLVCell.xib; sourceTree = "<group>"; };
 		476A4F9427FD954200794D7E /* SignInCLVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCLVCell.swift; sourceTree = "<group>"; };
-		476C60082802857600484930 /* tabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarController.swift; sourceTree = "<group>"; };
+		476C60082802857600484930 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		479CEFCC28041BC700E5D31E /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		479CEFCF2804219700E5D31E /* MessCLVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessCLVCell.xib; sourceTree = "<group>"; };
 		479CEFD02804219700E5D31E /* MessCLVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessCLVCell.swift; sourceTree = "<group>"; };
@@ -139,6 +149,17 @@
 			path = AppChatClone;
 			sourceTree = "<group>";
 		};
+		475FF8CA28050FE200993B32 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				479CEFCC28041BC700E5D31E /* MessageViewController.swift */,
+				475FF8CB2805100400993B32 /* GroupViewController.swift */,
+				475FF8CD2805101300993B32 /* FriendViewController.swift */,
+				475FF8CF2805102200993B32 /* ProfileViewController.swift */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
 		476A4F7027FD6F3600794D7E /* font */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,10 +182,10 @@
 		476A4F8B27FD79CA00794D7E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				475FF8CA28050FE200993B32 /* MainController */,
 				472E85CD27FD5137003BCD44 /* SignInController.swift */,
 				476A4F8C27FD7A1800794D7E /* SignUpViewController.swift */,
-				476C60082802857600484930 /* tabBarController.swift */,
-				479CEFCC28041BC700E5D31E /* MessageViewController.swift */,
+				476C60082802857600484930 /* TabBarController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -188,6 +209,8 @@
 				479CEFD02804219700E5D31E /* MessCLVCell.swift */,
 				479CEFD42804288F00E5D31E /* MessTableViewCell.xib */,
 				479CEFD52804288F00E5D31E /* MessTableViewCell.swift */,
+				475FF8D12805186100993B32 /* GrouplCollectionViewCell.xib */,
+				475FF8D22805186100993B32 /* GrouplCollectionViewCell.swift */,
 			);
 			path = MainCLVCell;
 			sourceTree = "<group>";
@@ -288,6 +311,7 @@
 				476A4F8427FD721F00794D7E /* Lato-Regular.ttf in Resources */,
 				476A4F8227FD721F00794D7E /* Lato-Italic.ttf in Resources */,
 				476A4F8727FD721F00794D7E /* Lato-ThinItalic.ttf in Resources */,
+				475FF8D32805186100993B32 /* GrouplCollectionViewCell.xib in Resources */,
 				476A4F7227FD6F5100794D7E /* MixSwift.ttf in Resources */,
 				4711EA3227FDDD40007C7953 /* SignUpCLVCell.xib in Resources */,
 			);
@@ -342,11 +366,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				475FF8CC2805100400993B32 /* GroupViewController.swift in Sources */,
 				472E85CE27FD5137003BCD44 /* SignInController.swift in Sources */,
+				475FF8CE2805101300993B32 /* FriendViewController.swift in Sources */,
 				479CEFD72804288F00E5D31E /* MessTableViewCell.swift in Sources */,
+				475FF8D42805186100993B32 /* GrouplCollectionViewCell.swift in Sources */,
+				475FF8D02805102200993B32 /* ProfileViewController.swift in Sources */,
 				479CEFD22804219700E5D31E /* MessCLVCell.swift in Sources */,
 				479CEFCD28041BC700E5D31E /* MessageViewController.swift in Sources */,
-				476C60092802857600484930 /* tabBarController.swift in Sources */,
+				476C60092802857600484930 /* TabBarController.swift in Sources */,
 				4711EA3327FDDD40007C7953 /* SignUpCLVCell.swift in Sources */,
 				472DFF1227FE806300FF5004 /* Extension.swift in Sources */,
 				472E85CA27FD5137003BCD44 /* AppDelegate.swift in Sources */,

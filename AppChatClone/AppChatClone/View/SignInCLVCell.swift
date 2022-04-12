@@ -13,6 +13,7 @@ class SignInCLVCell: UICollectionViewCell {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnSignIn: UIButton!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         let bottomLine = CALayer()
@@ -41,10 +42,14 @@ class SignInCLVCell: UICollectionViewCell {
     }
     @IBAction func btnSingIn(_ sender: Any) {
        let parent = parentVC as? SignInController
-        let vc = parent?.storyboard?.instantiateViewController(withIdentifier: "tabBarController") as? tabBarController
-        print("sss")
-        parent?.navigationController?.pushViewController(vc!, animated: true)
-       
         
+        let vc = parent?.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController
+       
+//        let navi = UINavigationController(rootViewController: parent!)
+//
+//        print("sss")
+//        navi.navigationController?.pushViewController(vc!, animated: true)
+
+        parent?.present(vc!, animated: true, completion: nil)
     }
 }

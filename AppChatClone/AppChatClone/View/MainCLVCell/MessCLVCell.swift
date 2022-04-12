@@ -15,7 +15,12 @@ class MessCLVCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        imgAvatar.layer.cornerRadius = imgAvatar.frame.height / 2.35
+//        imgAvatar.layer.cornerRadius = imgAvatar.frame.height / 2
+        imgAvatar.layer.borderWidth = 1
+        imgAvatar.layer.masksToBounds = false
+        imgAvatar.layer.borderColor = UIColor.black.cgColor
+        imgAvatar.layer.cornerRadius = imgAvatar.frame.height/2.6
+        imgAvatar.clipsToBounds = true
     }
 
 }
