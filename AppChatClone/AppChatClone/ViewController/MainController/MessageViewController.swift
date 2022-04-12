@@ -15,8 +15,9 @@ class MessageViewController: UIViewController, UITableViewDataSource, UIGestureR
     @IBOutlet weak var viewBottom: UIView!
     @IBOutlet weak var bottomTableView: UITableView!
     
+    var arrChose: [Int] = []
     var indexSelct: Int = -1
-    let arrSelcet = ["ngoc hap", "ngoc","hap","ngoc1","ngoc2","ngoc3"]
+    var arrSelcet = ["ngoc hap", "ngoc","hap","ngoc1","ngoc2","ngoc3"]
     override func viewDidLoad() {
         super.viewDidLoad()
         viewBottom.roundCorners(corners: [.topLeft, .topRight], radius: 40)
@@ -35,7 +36,7 @@ class MessageViewController: UIViewController, UITableViewDataSource, UIGestureR
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return arrSelcet.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -43,7 +44,15 @@ class MessageViewController: UIViewController, UITableViewDataSource, UIGestureR
             return UITableViewCell()
         }
         if indexSelct == indexPath.row {
+//            if arrSelect.contains(indexPath.row) {
+//                cell.imgCheck.image = UIImage(named: "ic_check")
+//            } else {
+//                cell.imgCheck.image = UIImage(named: "ic_uncheck")
+//            }
+
             cell.checkView.isHidden = false
+        } else {
+            cell.checkView.isHidden = true
         }
         cell.lbName.text = arrSelcet[indexPath.row]
         return cell
@@ -52,8 +61,8 @@ class MessageViewController: UIViewController, UITableViewDataSource, UIGestureR
       if editingStyle == .delete {
         print("Deleted")
 
-//          self.remove(at: indexPath.row)
-//        self.bottomTableView.deleteRows(at: [indexPath], with: .automatic)
+          arrSelcet.remove(at: indexPath.row)
+        self.bottomTableView.deleteRows(at: [indexPath], with: .automatic)
       }
     }
 
@@ -85,6 +94,10 @@ extension MessageViewController: UICollectionViewDataSource {
         print(p)
         if let indexPath = bottomTableView?.indexPathForRow(at: p) {
             indexSelct = indexPath.row
+            for i in 0..<indexPath.row {
+                arrChose.append(i)
+
+            }
             bottomTableView.reloadData()
         }
     }

@@ -107,6 +107,7 @@
             <connections>
                 <outlet property="checkView" destination="rAp-fu-9Nk" id="x4h-7j-48w"/>
                 <outlet property="imgAvatar" destination="vFb-Em-ivQ" id="Y9c-uM-any"/>
+                <outlet property="imgCheck" destination="SSu-j7-f9W" id="lIq-lD-hh9"/>
                 <outlet property="lbName" destination="2ku-po-7qb" id="dsu-Om-fb1"/>
                 <outlet property="lbltotalMessageNotRead" destination="p9i-Yp-PjI" id="GkR-kf-4Cf"/>
             </connections>

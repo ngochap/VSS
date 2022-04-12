@@ -12,6 +12,7 @@ class GroupViewController: UIViewController {
     @IBOutlet weak var viewBottom: UIView!
     @IBOutlet weak var groupCollectionView: UICollectionView!
     
+    var arrSelcet = ["ngoc hap", "ngoc","hap","ngoc1","ngoc2","ngoc3","ngoc3","ngoc3","ngoc3","ngoc3"]
     override func viewDidLoad() {
         super.viewDidLoad()
         viewBottom.roundCorners(corners: [.topLeft, .topRight], radius: 40)
@@ -25,13 +26,14 @@ class GroupViewController: UIViewController {
 
 extension GroupViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return arrSelcet.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GrouplCollectionViewCell", for: indexPath) as? GrouplCollectionViewCell else {
             return UICollectionViewCell()
         }
+        cell.lbName.text = arrSelcet[indexPath.row]
         return cell
     }
 

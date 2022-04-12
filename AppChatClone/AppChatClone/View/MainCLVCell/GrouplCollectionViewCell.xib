@@ -35,7 +35,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elx-Nk-ub4">
-                                <rect key="frame" x="103" y="15.5" width="45" height="15.5"/>
+                                <rect key="frame" x="103" y="15.5" width="45" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -68,7 +68,6 @@
                             <constraint firstItem="mUm-ew-05A" firstAttribute="leading" secondItem="J7b-CR-Dka" secondAttribute="trailing" constant="15" id="Q0T-lM-YDo"/>
                             <constraint firstItem="oJW-VO-BUo" firstAttribute="centerY" secondItem="FqB-ap-WeU" secondAttribute="centerY" id="cGm-iD-Akg"/>
                             <constraint firstItem="Elx-Nk-ub4" firstAttribute="top" secondItem="5eg-jr-Vy2" secondAttribute="top" id="nj8-dt-nWB"/>
-                            <constraint firstItem="wMw-d7-lkh" firstAttribute="top" secondItem="Elx-Nk-ub4" secondAttribute="bottom" constant="10" id="oAn-cW-F58"/>
                             <constraint firstItem="J7b-CR-Dka" firstAttribute="centerY" secondItem="FqB-ap-WeU" secondAttribute="centerY" id="oaV-bP-pfi"/>
                             <constraint firstItem="J7b-CR-Dka" firstAttribute="height" secondItem="FqB-ap-WeU" secondAttribute="height" multiplier="0.7" id="p4g-Xf-Vu3"/>
                             <constraint firstItem="wMw-d7-lkh" firstAttribute="centerY" secondItem="5eg-jr-Vy2" secondAttribute="centerY" id="vts-k0-VFS"/>
@@ -87,6 +86,7 @@
             <size key="customSize" width="390" height="103"/>
             <connections>
                 <outlet property="img" destination="5eg-jr-Vy2" id="1Gy-G8-D8d"/>
+                <outlet property="lbName" destination="Elx-Nk-ub4" id="3QN-LP-JX1"/>
                 <outlet property="viewImage" destination="J7b-CR-Dka" id="gUe-nL-Xsx"/>
                 <outlet property="viewParent" destination="FqB-ap-WeU" id="ciy-vP-MaC"/>
             </connections>

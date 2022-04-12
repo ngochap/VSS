@@ -13,11 +13,12 @@ class MessTableViewCell: UITableViewCell {
     @IBOutlet weak var lbltotalMessageNotRead: UILabel!
     @IBOutlet weak var imgAvatar: UIImageView!
     @IBOutlet weak var lbName: UILabel!
+    @IBOutlet weak var imgCheck: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         imgAvatar.layer.cornerRadius = imgAvatar.frame.width / 3
-        checkView.isHidden = true
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
