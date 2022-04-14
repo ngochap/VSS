@@ -63,10 +63,13 @@ class FriendViewController: UIViewController, UICollectionViewDataSource, UIColl
         let indexPath = NSIndexPath(item: menuIndex, section: 0)
         listCollection.scrollToItem(at: indexPath as IndexPath, at: [], animated: true)
     }
+    var aqqq: CGFloat = 0.0
     @IBAction func clickList(_ sender: UIButton) {
         let x = CGFloat(sender.tag) * viewMenu.frame.width / 3 + 10
+        //let x = 0
+        aqqq = x
         hori?.constant = x
-                scrollMenuItemIndex(menuIndex: sender.tag)
+        scrollMenuItemIndex(menuIndex: sender.tag)
         UIView.animate(withDuration: 0.4, animations: {
             self.viewMenu.layoutIfNeeded()
         })
@@ -102,6 +105,7 @@ class FriendViewController: UIViewController, UICollectionViewDataSource, UIColl
         return cell
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+       
         hori?.constant = scrollView.contentOffset.x / 3 + 10
     }
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {

@@ -14,12 +14,15 @@ class MessageViewController: UIViewController, UITableViewDataSource, UIGestureR
     @IBOutlet weak var topCollectionView: UICollectionView!
     @IBOutlet weak var viewBottom: UIView!
     @IBOutlet weak var bottomTableView: UITableView!
+    @IBOutlet weak var viewsearch: UIView!
     
     var arrChose: [Int] = []
     var indexSelct: Int = -1
     var arrSelcet = ["ngoc hap", "ngoc","hap","ngoc1","ngoc2","ngoc3"]
+    var chose: Bool = true
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewsearch.isHidden = true
         viewBottom.roundCorners(corners: [.topLeft, .topRight], radius: 40)
       //  topCollectionView.delegate = self
         topCollectionView.dataSource = self
@@ -29,10 +32,23 @@ class MessageViewController: UIViewController, UITableViewDataSource, UIGestureR
         bottomTableView.dataSource = self
         bottomTableView.register(UINib(nibName: "MessTableViewCell", bundle: nil), forCellReuseIdentifier: "MessTableViewCell")
         setupLongGestureRecognizerOnCollection()
+        navigationController?.navigationBar.isHidden = true
     }
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         view.layoutSubviews()
+    }
+    @IBAction func btnChoseSearch(_ sender: Any) {
+        if chose {
+            viewsearch.isHidden = false
+        } else {
+            viewsearch.isHidden = true
+        }
+        chose = !chose
+        UIView.animate(withDuration: 0.5) {
+                   self.view.layoutIfNeeded()
+//                   self.BGImageControl.image = UIImage.init(named: "BtnHome1")
+               }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

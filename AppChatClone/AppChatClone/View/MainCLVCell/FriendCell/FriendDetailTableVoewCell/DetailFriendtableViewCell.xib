@@ -49,6 +49,9 @@
                                 </fragment>
                             </attributedString>
                         </buttonConfiguration>
+                        <connections>
+                            <action selector="btnaa:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ykV-XH-6jn"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

@@ -22,4 +22,7 @@ class DetailFriendtableViewCell: UITableViewCell {
         
     }
     
+    @IBAction func btnaa(_ sender: Any) {
+        print("aa")
+    }
 }

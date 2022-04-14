@@ -46,8 +46,8 @@ class SignInCLVCell: UICollectionViewCell {
        
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController
-        let root = UINavigationController(rootViewController: parent!)
-        root.navigationController?.pushViewController(vc!, animated: true)
+       
+        parent?.navigationController?.pushViewController(vc!, animated: true)
 //        let navi = UINavigationController(rootViewController: parent!)
 //
 //        print("sss")
