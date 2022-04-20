@@ -20,6 +20,8 @@ class MessageViewController: UIViewController, UITableViewDataSource, UIGestureR
     var indexSelct: Int = -1
     var arrSelcet = ["ngoc hap", "ngoc","hap","ngoc1","ngoc2","ngoc3"]
     var chose: Bool = true
+    var check: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewsearch.isHidden = true
@@ -59,16 +61,16 @@ class MessageViewController: UIViewController, UITableViewDataSource, UIGestureR
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MessTableViewCell") as? MessTableViewCell else {
             return UITableViewCell()
         }
-        if indexSelct == indexPath.row {
+       // if indexSelct == indexPath.row {
 //            if arrSelect.contains(indexPath.row) {
 //                cell.imgCheck.image = UIImage(named: "ic_check")
 //            } else {
 //                cell.imgCheck.image = UIImage(named: "ic_uncheck")
 //            }
-
-            cell.checkView.isHidden = false
-        } else {
+        if check {
             cell.checkView.isHidden = true
+        } else {
+            cell.checkView.isHidden = false
         }
         cell.lbName.text = arrSelcet[indexPath.row]
         return cell
@@ -110,10 +112,11 @@ extension MessageViewController: UICollectionViewDataSource {
         print(p)
         if let indexPath = bottomTableView?.indexPathForRow(at: p) {
             indexSelct = indexPath.row
-            for i in 0..<indexPath.row {
-                arrChose.append(i)
-
-            }
+            check = !check
+//            for i in 0..<indexPath.row {
+//                arrChose.append(i)
+//
+//            }
             bottomTableView.reloadData()
         }
     }

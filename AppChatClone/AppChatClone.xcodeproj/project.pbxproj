@@ -38,6 +38,7 @@
 		476A4F9527FD954200794D7E /* SignInCLVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 476A4F9327FD954200794D7E /* SignInCLVCell.xib */; };
 		476A4F9627FD954200794D7E /* SignInCLVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476A4F9427FD954200794D7E /* SignInCLVCell.swift */; };
 		476C60092802857600484930 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C60082802857600484930 /* TabBarController.swift */; };
+		479618E4281026590043E053 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479618E3281026590043E053 /* ChatViewController.swift */; };
 		479CEFCD28041BC700E5D31E /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479CEFCC28041BC700E5D31E /* MessageViewController.swift */; };
 		479CEFD12804219700E5D31E /* MessCLVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 479CEFCF2804219700E5D31E /* MessCLVCell.xib */; };
 		479CEFD22804219700E5D31E /* MessCLVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479CEFD02804219700E5D31E /* MessCLVCell.swift */; };
@@ -87,6 +88,7 @@
 		476A4F9327FD954200794D7E /* SignInCLVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInCLVCell.xib; sourceTree = "<group>"; };
 		476A4F9427FD954200794D7E /* SignInCLVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCLVCell.swift; sourceTree = "<group>"; };
 		476C60082802857600484930 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		479618E3281026590043E053 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		479CEFCC28041BC700E5D31E /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		479CEFCF2804219700E5D31E /* MessCLVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessCLVCell.xib; sourceTree = "<group>"; };
 		479CEFD02804219700E5D31E /* MessCLVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessCLVCell.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 		475FF8CA28050FE200993B32 /* MainController */ = {
 			isa = PBXGroup;
 			children = (
+				479618E2281026370043E053 /* ChatViewController */,
 				479CEFCC28041BC700E5D31E /* MessageViewController.swift */,
 				475FF8CB2805100400993B32 /* GroupViewController.swift */,
 				475FF8CD2805101300993B32 /* FriendViewController.swift */,
@@ -208,6 +211,14 @@
 				4711EA3127FDDD3F007C7953 /* SignUpCLVCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		479618E2281026370043E053 /* ChatViewController */ = {
+			isa = PBXGroup;
+			children = (
+				479618E3281026590043E053 /* ChatViewController.swift */,
+			);
+			path = ChatViewController;
 			sourceTree = "<group>";
 		};
 		479CEFCE2804217500E5D31E /* MainCLVCell */ = {
@@ -428,6 +439,7 @@
 				472E85CA27FD5137003BCD44 /* AppDelegate.swift in Sources */,
 				476A4F8D27FD7A1800794D7E /* SignUpViewController.swift in Sources */,
 				472E85CC27FD5137003BCD44 /* SceneDelegate.swift in Sources */,
+				479618E4281026590043E053 /* ChatViewController.swift in Sources */,
 				476A4F9627FD954200794D7E /* SignInCLVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

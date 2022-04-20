@@ -43,7 +43,6 @@ class SignInCLVCell: UICollectionViewCell {
     @IBAction func btnSingIn(_ sender: Any) {
        let parent = parentVC as? SignInController
         
-       
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController
        

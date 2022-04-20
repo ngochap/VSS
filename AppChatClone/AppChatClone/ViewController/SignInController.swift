@@ -42,6 +42,6 @@ class SignInController: UIViewController, UICollectionViewDataSource, UICollecti
 }
 extension SignInController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: signInCollectionView.bounds.width, height: signInCollectionView.bounds.width)
+        return CGSize(width: signInCollectionView.bounds.width, height: signInCollectionView.safeAreaLayoutGuide.layoutFrame.height)
     }
 }

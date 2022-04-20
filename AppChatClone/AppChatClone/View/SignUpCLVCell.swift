@@ -85,7 +85,8 @@ class SignUpCLVCell: UICollectionViewCell {
          //emailPred.evaluate(with: txtEmail.text)
         if emailPred.evaluate(with: txtEmail.text) == false {
             emailError.text = "Email phải có dạng yourName@gmail.com"
-           // emailPred.evaluate(with: txtEmail.text)
+            emailError.isHidden = false
+            // emailPred.evaluate(with: txtEmail.text)
         } else {
             emailError.isHidden = true
         }
@@ -149,9 +150,9 @@ class SignUpCLVCell: UICollectionViewCell {
                 return
             }
             let parent = self.parentVC as? SignUpViewController
-            vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
-            parent?.present(vc, animated: true, completion: nil)
-            
+//            vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
+//            parent?.present(vc, animated: true, completion: nil)
+            parent?.navigationController?.popViewController(animated: true)
         }
         
     }

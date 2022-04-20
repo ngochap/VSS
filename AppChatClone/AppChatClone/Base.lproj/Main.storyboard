@@ -12,7 +12,6 @@
         <!--Navigation Controller-->
         <scene sceneID="c1F-0O-mbu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ySt-GQ-ImG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="PyV-TL-Lx5" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ft6-89-efB">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -22,6 +21,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GiR-83-pYf"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySt-GQ-ImG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-907" y="98"/>
         </scene>
@@ -399,6 +399,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSd-Ef-Bsz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1500.0000000000002" y="97.767857142857139"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="k8Z-Hv-j86">
+            <objects>
+                <viewController storyboardIdentifier="ChatViewController" id="Dxx-Vy-6Tc" customClass="ChatViewController" customModule="AppChatClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5UY-uj-SoR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UHQ-IK-CYx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lM4-M6-SIv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500" y="871"/>
         </scene>
         <!--Nhóm-->
         <scene sceneID="14d-Ft-ELX">
