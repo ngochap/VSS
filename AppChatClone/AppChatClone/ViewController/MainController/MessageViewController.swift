@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MessageViewController: UIViewController, UITableViewDataSource, UIGestureRecognizerDelegate {
+class MessageController: UIViewController, UITableViewDataSource, UIGestureRecognizerDelegate, UITableViewDelegate {
     
     
 
@@ -26,12 +26,13 @@ class MessageViewController: UIViewController, UITableViewDataSource, UIGestureR
         super.viewDidLoad()
         viewsearch.isHidden = true
         viewBottom.roundCorners(corners: [.topLeft, .topRight], radius: 40)
-      //  topCollectionView.delegate = self
+        topCollectionView.delegate = self
         topCollectionView.dataSource = self
         topCollectionView.delegate = self
         topCollectionView.register(UINib(nibName: "MessCLVCell", bundle: nil), forCellWithReuseIdentifier: "MessCLVCell")
         
         bottomTableView.dataSource = self
+        bottomTableView.delegate = self
         bottomTableView.register(UINib(nibName: "MessTableViewCell", bundle: nil), forCellReuseIdentifier: "MessTableViewCell")
         setupLongGestureRecognizerOnCollection()
         navigationController?.navigationBar.isHidden = true
@@ -61,12 +62,6 @@ class MessageViewController: UIViewController, UITableViewDataSource, UIGestureR
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MessTableViewCell") as? MessTableViewCell else {
             return UITableViewCell()
         }
-       // if indexSelct == indexPath.row {
-//            if arrSelect.contains(indexPath.row) {
-//                cell.imgCheck.image = UIImage(named: "ic_check")
-//            } else {
-//                cell.imgCheck.image = UIImage(named: "ic_uncheck")
-//            }
         if check {
             cell.checkView.isHidden = true
         } else {
@@ -83,18 +78,14 @@ class MessageViewController: UIViewController, UITableViewDataSource, UIGestureR
         self.bottomTableView.deleteRows(at: [indexPath], with: .automatic)
       }
     }
-
-}
-extension MessageViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MessCLVCell", for: indexPath) as? MessCLVCell else {
-            return UICollectionViewCell()
-        }
-        return cell
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "ChatViewController") else { return  }
+//          let vc = ChatViewController()
+        vc.title = "chat"
+        navigationController?.navigationBar.isHidden = false
+        navigationController?.pushViewController(vc, animated: true)
+//        present(vc, animated: true, completion: nil)
+        
     }
     private func setupLongGestureRecognizerOnCollection() {
         let longPressedGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(gestureRecognizer:)))
@@ -120,9 +111,27 @@ extension MessageViewController: UICollectionViewDataSource {
             bottomTableView.reloadData()
         }
     }
+}
+extension MessageController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MessCLVCell", for: indexPath) as? MessCLVCell else {
+            return UICollectionViewCell()
+        }
+        return cell
+    }
+   
   
 }
-extension MessageViewController: UICollectionViewDelegateFlowLayout {
+extension MessageController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+      
+    }
+}
+extension MessageController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: topCollectionView.bounds.width / 5, height: topCollectionView.frame.height)
     }

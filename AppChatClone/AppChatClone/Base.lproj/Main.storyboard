@@ -252,7 +252,7 @@
         <!--nhắn tin-->
         <scene sceneID="fQC-C1-9Ew">
             <objects>
-                <viewController storyboardIdentifier="MessageViewController" id="bvx-9f-oa4" customClass="MessageViewController" customModule="AppChatClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MessageController" id="bvx-9f-oa4" customClass="MessageController" customModule="AppChatClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wIV-5V-dyf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -389,11 +389,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="nhắn tin" image="nhantin" landscapeImage="back" id="AF4-SH-QkF"/>
+                    <navigationItem key="navigationItem" id="mCR-OY-N1p"/>
                     <connections>
-                        <outlet property="bottomTableView" destination="HyA-OP-rlQ" id="0Id-SI-npa"/>
-                        <outlet property="topCollectionView" destination="kxv-PW-ehw" id="1eT-ks-qq2"/>
-                        <outlet property="viewBottom" destination="O0Z-y7-cjj" id="dl7-0M-dAq"/>
-                        <outlet property="viewsearch" destination="7fb-cw-q1c" id="PTP-8i-pQ8"/>
+                        <outlet property="bottomTableView" destination="HyA-OP-rlQ" id="DJ0-Ux-2n4"/>
+                        <outlet property="topCollectionView" destination="kxv-PW-ehw" id="QB6-pe-luQ"/>
+                        <outlet property="viewBottom" destination="O0Z-y7-cjj" id="NaK-xj-25u"/>
+                        <outlet property="viewsearch" destination="7fb-cw-q1c" id="ip6-ML-siq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSd-Ef-Bsz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -401,19 +402,20 @@
             <point key="canvasLocation" x="1500.0000000000002" y="97.767857142857139"/>
         </scene>
         <!--Chat View Controller-->
-        <scene sceneID="k8Z-Hv-j86">
+        <scene sceneID="EJR-pf-ZGa">
             <objects>
-                <viewController storyboardIdentifier="ChatViewController" id="Dxx-Vy-6Tc" customClass="ChatViewController" customModule="AppChatClone" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5UY-uj-SoR">
+                <viewController storyboardIdentifier="ChatViewController" id="Dlw-wk-6FN" customClass="ChatViewController" customModule="AppChatClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="One-pW-c1g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="UHQ-IK-CYx"/>
+                        <viewLayoutGuide key="safeArea" id="MLp-d5-01d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="v3D-yg-RsE"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lM4-M6-SIv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aog-Iw-NlM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1500" y="871"/>
+            <point key="canvasLocation" x="1500" y="810"/>
         </scene>
         <!--Nhóm-->
         <scene sceneID="14d-Ft-ELX">
